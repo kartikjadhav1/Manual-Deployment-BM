@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Mumbai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Beyond Mumbai</h1>
+        <p>Explore the real Maharashtra</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#" id="darkModeBtn">🌙 Dark Mode</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Discover Hidden Gems of Maharashtra</h2>
+        <div class="search-container">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search destinations...">
+        </div>
+    </section>
+
+    <section id="destinations" class="section">
+        <h2 class="section-title">Popular Destinations</h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hill">Hill Stations</button>
+            <button class="filter-btn" data-filter="beach">Beaches</button>
+            <button class="filter-btn" data-filter="heritage">Heritage</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+        </div>
+
+        <div class="card-container" id="cardContainer">
+            <div class="card-wrapper" data-category="hill adventure">
+                <button class="wishlist-btn" data-id="1">♡</button>
+                <div class="card" data-destination="Lonavala">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltRYAcH6yLiih0ooSF2FiH8rhDWJfh93VFA&s" alt="Lonavala">
+                    <div class="card-content">
+                        <h3>Lonavala</h3>
+                        <p>Perfect for chill trips, misty views, and monsoon vibes 🌿</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.5</div>
+                        <div class="card-tags">
+                            <span class="tag">Hill Station</span>
+                            <span class="tag">Monsoon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper" data-category="heritage">
+                <button class="wishlist-btn" data-id="2">♡</button>
+                <div class="card" data-destination="Ajanta & Ellora">
+                    <img src="https://explorewithbob.com/wp-content/uploads/2022/06/yyy.jpg" alt="Ajanta Caves">
+                    <div class="card-content">
+                        <h3>Ajanta & Ellora</h3>
+                        <p>Ancient art, rock-cut caves, and history that still slaps 🔥</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+                        <div class="card-tags">
+                            <span class="tag">Heritage</span>
+                            <span class="tag">UNESCO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper" data-category="beach">
+                <button class="wishlist-btn" data-id="3">♡</button>
+                <div class="card" data-destination="Konkan Coast">
+                    <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2" alt="Konkan Beaches">
+                    <div class="card-content">
+                        <h3>Konkan Coast</h3>
+                        <p>Low-key beaches, blue waters, and pure main-character energy 🌊</p>
+                        <div class="rating">⭐⭐⭐⭐ 4.3</div>
+                        <div class="card-tags">
+                            <span class="tag">Beach</span>
+                            <span class="tag">Coastal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper" data-category="hill">
+                <button class="wishlist-btn" data-id="4">♡</button>
+                <div class="card" data-destination="Mahabaleshwar">
+                    <img src="https://www.traveltwilight.com/wp-content/uploads/2020/12/GOPR3854.jpg" alt="Mahabaleshwar">
+                    <div class="card-content">
+                        <h3>Mahabaleshwar</h3>
+                        <p>Strawberries, viewpoints, and cozy hill-station feels 🍓</p>
+                        <div class="rating">⭐⭐⭐⭐ 4.4</div>
+                        <div class="card-tags">
+                            <span class="tag">Hill Station</span>
+                            <span class="tag">Scenic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="weather-widget">
+            <h3>🌤️ Weather in Maharashtra</h3>
+            <p id="weatherInfo">Current Temperature: 24°C | Partly Cloudy</p>
+            <p style="font-size: 12px; margin-top: 10px;">Best time to visit: October to February</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section light-bg">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu_LETIHtU5jOJIr2XhC7LT24j5BSckjGkbQ&s" alt="Maharashtra" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2" alt="Beach" loading="lazy">
+            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Gateway-Of-India_600.jpg" alt="Gateway" loading="lazy">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKQdnEaBHC4gW2AYYTu3NRcvWnBhU8jOLOA&s" alt="Culture" loading="lazy">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtORUDRFtIzcnBZtVQN6XF1_Bt5U1NYhHBUQ&s" alt="Heritage" loading="lazy">
+        </div>
+    </section>
+
+    <section class="section form-section">
+        <h2 class="section-title">Plan Your Trip</h2>
+        <form class="travel-form" id="travelForm">
+            <label>
+                Your Name
+                <input type="text" id="userName" placeholder="Enter your name" required>
+            </label>
+
+            <label>
+                Choose a Destination
+                <select id="destination" required>
+                    <option value="">Select a place</option>
+                    <option>Lonavala</option>
+                    <option>Mahabaleshwar</option>
+                    <option>Konkan Coast</option>
+                    <option>Ajanta & Ellora</option>
+                </select>
+            </label>
+
+            <label>
+                Travel Vibe
+                <select required>
+                    <option value="">Choose your vibe</option>
+                    <option>Chill & Relax 🌿</option>
+                    <option>Adventure & Trekking 🧗</option>
+                    <option>Beach & Sunset 🌊</option>
+                    <option>History & Culture 🏛️</option>
+                </select>
+            </label>
+
+            <label>
+                Preferred Travel Duration
+                <select required>
+                    <option value="">Select duration</option>
+                    <option>Weekend Trip</option>
+                    <option>3–5 Days</option>
+                    <option>1 Week+</option>
+                </select>
+            </label>
+
+            <button type="submit">Submit Preference</button>
+            <div class="success-message" id="successMsg">✅ Your travel preferences have been saved!</div>
+        </form>
+    </section>
+
+    <section id="about" class="section light-bg">
+        <h2 class="section-title">About Maharashtra</h2>
+        <p class="about-text">
+            Maharashtra is a land of diverse landscapes, rich culture, and incredible heritage. From the bustling streets of Mumbai to the serene hill stations of the Western Ghats, from ancient cave temples to pristine beaches along the Konkan coast - Maharashtra offers something for every traveler. Explore beyond the obvious and discover the hidden treasures that make this state truly special.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Beyond Mumbai | Created by Kartik | Explore Responsibly 🌍</p>
+    </footer>
+
+    <div class="modal" id="destinationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h3>What to do:</h3>
+            <ul id="modalActivities"></ul>
+            <h3>Best Time to Visit:</h3>
+            <p id="modalBestTime"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
